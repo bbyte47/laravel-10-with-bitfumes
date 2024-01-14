@@ -1,2 +1,9 @@
 git init
 git add .
+git commit -m "lets begin"
+git remote add origin https://github.com/bbyte47/laravel-10-with-bitfumes.git
+git branch -M main
+git push -u origin main
+//made change to READ.made
+git status
+git add .
