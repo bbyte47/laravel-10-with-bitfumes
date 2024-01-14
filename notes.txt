@@ -7,3 +7,5 @@ git push -u origin main
 //made change to READ.made
 git status
 git add .
+git commit -m "updated the readme file"
+git push
