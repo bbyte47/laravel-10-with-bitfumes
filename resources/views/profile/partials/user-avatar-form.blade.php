@@ -4,6 +4,8 @@
             User Avatar
         </h2>
 
+        <img width="40" height="40" class='rounded-full' src="/storage/{{ $user->avatar }}" alt="user avatar" />
+
         <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
             Add or update user avatar
         </p>
@@ -14,7 +16,7 @@
         {{ session('message') }}
     </div>
     @endif
-    <form method="post" action="{{route('profile.avatar')}}">
+    <form method="post" action="{{route('profile.avatar')}}" enctype="multipart/form-data">
         @csrf
         @method('patch')
         <div>
